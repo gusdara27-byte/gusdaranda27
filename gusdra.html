@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felix</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    background-image: url(WhatsApp\ Image\ 2026-09-28\ at\ 11.17.26.jpeg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.container{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    width:90%;
+    max-width:700px;
+}
+
+h1{
+    font-size:60px;
+    letter-spacing:4px;
+}
+
+p{
+    margin:15px 0 30px;
+    font-size:18px;
+}
+
+audio{
+    width:100%;
+    margin:15px 0 35px;
+}
+
+.hobby{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.hobby button{
+    padding:12px 22px;
+    border:1px solid white;
+    border-radius:30px;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hobby button:hover{
+    background:white;
+    color:black;
+}
+</style>
+
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <h1>GUSDARA</h1>
+    <p>Web Designer • Music Lover • Dreaming Beyond Borders</p>
+
+    <h2>🎵 my life soundtrack</h2>
+
+    <audio controls>
+        <source src="WhatsApp Audio 2026-09-28 at 11.05.56.mp4" type="audio/mpeg">
+    </audio>
+
+    <h2>what i'm into 👀</h2>
+
+    <div class="hobby">
+        <button>💻 Web Design</button>
+        <button>🎧 Music</button>
+        <button>📸 Photography</button>
+        <button>✈️ Travel</button>
+        <button>☕ Coffee</button>
+        <button>🌙 Night Walk</button>
+    </div>
+
+</div>
+
+</body>
+</html>
